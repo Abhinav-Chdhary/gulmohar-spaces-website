@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F8F7F2; color: #17312D; font-family: var(--font-sans), Arial, sans-serif; }
+.skip-link { position: fixed; z-index: 100; left: 1rem; top: -4rem; border-radius: 999px; background: #F8F7F2; color: #17312D; padding: .75rem 1rem; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: top 160ms ease; }
+.skip-link:focus { top: 1rem; outline: 2px solid #B38757; outline-offset: 2px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: #B38757; color: #F8F7F2; }
+.display { font-family: var(--font-display), Georgia, serif; font-weight: 400; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.image-zoom img { transition: transform 700ms cubic-bezier(.2,.65,.3,1); }
+.image-zoom:hover img { transform: scale(1.035); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
