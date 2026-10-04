@@ -29,7 +29,7 @@ export default function Home() {
             <span className="intro__ease">
               ease
               <img className="intro__circle" src="/decorations/circle.svg" alt="" aria-hidden="true" />
-              <img className="intro__heart" src="/decorations/heart.svg" alt="" aria-hidden="true" />
+              <img className="intro__heart" src="/decorations/heart-filled.svg" alt="" aria-hidden="true" />
             </span>
           </span>
         </h1>
