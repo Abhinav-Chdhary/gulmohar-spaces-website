@@ -94,7 +94,7 @@ export function ProcessSection() {
             <button type="button" onClick={() => setVideoOpen(true)} aria-label="Play process film">
               <Image
                 fill
-                src="/reference/process-room.png"
+                src="/reference/process-room.webp"
                 alt="Warm living room interior featured in the process film"
                 sizes="(min-width: 900px) 680px, 92vw"
               />
@@ -120,7 +120,7 @@ export function ProcessSection() {
           </button>
           <div className="process-modal__card">
             <div className="process-modal__image">
-              <Image fill src="/reference/process-room.png" alt="" sizes="min(800px, 92vw)" />
+              <Image fill src="/reference/process-room.webp" alt="" sizes="min(800px, 92vw)" />
             </div>
             <p id="process-modal-title">Process film coming soon.</p>
             <a href="mailto:hello@gulmoharspaces.com">Get in touch in the meantime</a>

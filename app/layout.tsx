@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Manrope, Public_Sans, Questrial } from "next/font/google";
+import { Public_Sans, Questrial } from "next/font/google";
 import "./globals.css";
 
 const questrial = Questrial({
@@ -11,20 +11,6 @@ const questrial = Questrial({
 const publicSans = Public_Sans({
   subsets: ["latin"],
   variable: "--font-body",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-editorial",
-  display: "swap",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-interface",
   display: "swap",
 });
 
@@ -47,7 +33,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${questrial.variable} ${publicSans.variable} ${dmSans.variable} ${manrope.variable}`}>
+      <body className={`${questrial.variable} ${publicSans.variable}`}>
         <a className="skip-link" href="#main-content">Skip to content</a>
         {children}
       </body>
