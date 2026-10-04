@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HeroCarousel } from "@/components/hero-carousel";
 import { ProcessSection } from "@/components/process-section";
 import { SiteHeader } from "@/components/site-header";
 
@@ -15,14 +16,7 @@ export default function Home() {
       <SiteHeader />
 
       <section className="hero" id="top" aria-label="Gulmohar Spaces introduction">
-        <Image
-          priority
-          fill
-          src="/reference/hero-bedroom.jpg"
-          alt="A calm bedroom with a blue upholstered bed, warm pendant lights and botanical artwork"
-          sizes="100vw"
-          className="hero__image"
-        />
+        <HeroCarousel />
       </section>
 
       <section className="intro" id="about">
