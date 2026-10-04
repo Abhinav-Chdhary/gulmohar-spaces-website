@@ -66,7 +66,6 @@ export function ProcessSection() {
         />
         <div className="process-reference__inner">
           <div className="process-reference__label">
-            <span>02</span>
             <p>Process</p>
           </div>
 
