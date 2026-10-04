@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.26 64.1">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .46em;
+      }
+
+      .cls-2 {
+        font-family: PublicSansRoman-Light, 'Public Sans';
+        font-size: 15.54px;
+        font-variation-settings: 'wght' 300;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        letter-spacing: .44em;
+      }
+
+      .cls-4 {
+        font-family: Questrial-Regular, Questrial;
+        font-size: 45.69px;
+        letter-spacing: .03em;
+      }
+
+      .cls-5 {
+        letter-spacing: .5em;
+      }
+
+      .cls-6 {
+        letter-spacing: .5em;
+      }
+
+      .cls-7 {
+        letter-spacing: .5em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-4" transform="translate(0 37.97)"><tspan x="0" y="0">gulmohar</tspan></text>
+      <text class="cls-2" transform="translate(44.35 60.37)"><tspan class="cls-6" x="0" y="0">S</tspan><tspan class="cls-3" x="18.03" y="0">P</tspan><tspan class="cls-1" x="34.73" y="0">A</tspan><tspan class="cls-7" x="52.92" y="0">C</tspan><tspan class="cls-5" x="71.26" y="0">E</tspan><tspan class="cls-7" x="88.66" y="0">S</tspan></text>
+    </g>
+  </g>
+</svg>

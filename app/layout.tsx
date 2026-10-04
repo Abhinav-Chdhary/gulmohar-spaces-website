@@ -1,34 +1,56 @@
 import type { Metadata } from "next";
-import { DM_Sans, Cormorant_Garamond } from "next/font/google";
+import { DM_Sans, Manrope, Public_Sans, Questrial } from "next/font/google";
 import "./globals.css";
 
-const sans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
-const display = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-display", weight: ["400", "500", "600"] });
+const questrial = Questrial({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display",
+});
+
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-editorial",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-interface",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gulmoharspaces.com"),
-  title: {
-    default: "Gulmohar Spaces | Interiors with a sense of place",
-    template: "%s | Gulmohar Spaces",
-  },
-  description: "Gulmohar Spaces is an interior design studio creating enduring, evocative homes and hospitality spaces.",
-  keywords: ["interior design studio", "interior architecture", "luxury interiors", "residential interiors India", "hospitality interiors"],
+  title: "Gulmohar Spaces | Interiors, planning and art",
+  description: "Gulmohar Spaces creates interiors around the people who inhabit them.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Gulmohar Spaces | Interiors with a sense of place",
-    description: "Enduring, evocative homes and hospitality spaces across India.",
+    title: "Gulmohar Spaces",
+    description: "Spaces for ambition, connection and ease.",
     url: "/",
     siteName: "Gulmohar Spaces",
     locale: "en_IN",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Gulmohar Spaces | Interiors with a sense of place",
-    description: "Enduring, evocative homes and hospitality spaces across India.",
+    images: [{ url: "/reference/hero-bedroom.jpg", alt: "Gulmohar Spaces bedroom interior" }],
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body className={`${sans.variable} ${display.variable}`}><a className="skip-link" href="#main-content">Skip to content</a>{children}</body></html>;
+  return (
+    <html lang="en">
+      <body className={`${questrial.variable} ${publicSans.variable} ${dmSans.variable} ${manrope.variable}`}>
+        <a className="skip-link" href="#main-content">Skip to content</a>
+        {children}
+      </body>
+    </html>
+  );
 }
