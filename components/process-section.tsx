@@ -60,7 +60,7 @@ export function ProcessSection() {
       <section className="process-reference" id="process">
         <img
           className="process-reference__tape"
-          src="/decorations/tape-horizontal.svg"
+          src="/decorations/tape-vertical.svg"
           alt=""
           aria-hidden="true"
         />

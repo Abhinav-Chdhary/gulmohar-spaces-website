@@ -405,18 +405,18 @@ img {
   position: relative;
   color: #293126;
   background: #aeb6a2;
-  border-top: 3px solid #233120;
+  border-top: 9px solid #233120;
   padding: 110px 24px 130px;
   font-family: var(--body);
 }
 .process-reference__tape {
   position: absolute;
   z-index: 2;
-  top: -40px;
+  top: -8px;
   left: 70%;
-  width: 160px;
+  width: 320px;
   height: auto;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(88deg);
   pointer-events: none;
 }
 .process-reference__inner {
@@ -471,7 +471,7 @@ img {
 }
 .process-reference__copy h3 {
   margin: 0 0 18px;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: 600;
 }
 .process-reference__copy p {
@@ -517,6 +517,7 @@ img {
   place-items: center;
   background: #e84c48;
   transform: translate(-50%, -50%);
+  border-radius: 25%;
 }
 .process-film__play span {
   width: 0;
@@ -528,9 +529,8 @@ img {
 }
 .process-film > p {
   margin: 18px 0 0;
-  font: 500 clamp(0.65rem, 0.94vw, 1.125rem)/1.33 var(--body);
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
+  font: 300 clamp(0.7rem, 0.72vw, 0.875rem)/1.5 var(--body);
+  letter-spacing: 0.035em;
 }
 
 .process-modal {
@@ -661,9 +661,9 @@ img {
     gap: 54px;
   }
   .process-reference__tape {
-    top: -37px;
+    top: -7px;
     left: 68%;
-    width: 150px;
+    width: 280px;
   }
   .process-reference__inner {
     max-width: 850px;
@@ -875,9 +875,9 @@ img {
     padding-block: 85px 100px;
   }
   .process-reference__tape {
-    top: -34px;
+    top: -6px;
     left: 68%;
-    width: 138px;
+    width: 240px;
   }
   .process-reference__lead {
     margin-bottom: 70px;
