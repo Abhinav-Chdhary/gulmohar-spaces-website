@@ -228,7 +228,8 @@ img {
 .work__arrow {
   width: 28px;
   height: auto;
-  margin: 18px 0 0 -6px;
+  margin-top: 26px;
+  transform: translateX(-88px);
 }
 
 .project-grid {
@@ -291,38 +292,60 @@ img {
   pointer-events: none;
 }
 .gold-tape--1 {
-  left: -57px;
-  top: -48px;
-  width: 150px;
+  left: -32px;
+  top: -36px;
+  width: 168px;
 }
 .gold-tape--2 {
-  left: 39%;
-  top: -53px;
-  width: 150px;
+  left: 47%;
+  top: -48px;
+  width: 235px;
 }
 .gold-tape--3 {
-  right: -49px;
-  bottom: -55px;
-  width: 150px;
+  right: auto;
+  top: 97%;
+  left: 60%;
+  width: 225px;
+  transform: translateX(-50%) rotate(90deg);
 }
 .gold-tape--4 {
-  left: 39%;
-  top: -52px;
-  width: 150px;
+  top: -2%;
+  left: 60%;
+  width: 235px;
+  transform: translateX(-50%) rotate(90deg);
 }
 .view-all {
-  display: flex;
+  position: relative;
+  display: block;
   width: max-content;
   margin: 104px auto 0;
-  align-items: center;
-  gap: 14px;
   font: 500 clamp(0.62rem, 0.94vw, 1.125rem)/1.33 var(--body);
   letter-spacing: 0.5em;
   text-decoration: none;
 }
+.view-all > span {
+  display: block;
+}
 .view-all img {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 14px);
   width: 25px;
   height: auto;
+  transform: translateY(-50%);
+}
+.view-all > span::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  margin-top: 6px;
+  background: var(--red);
+  transition: width 0.22s ease;
+}
+.view-all:hover > span::after,
+.view-all:focus-visible > span::after {
+  width: calc(100% - 0.5em);
 }
 
 .testimonial {
@@ -615,6 +638,31 @@ img {
   .work__inner {
     padding-inline: 48px;
   }
+  .work__arrow {
+    transform: translateX(-62px);
+  }
+  .gold-tape--1 {
+    left: -29px;
+    top: -33px;
+    width: 154px;
+  }
+  .gold-tape--2 {
+    left: 47%;
+    top: -43px;
+    width: 210px;
+  }
+  .gold-tape--3 {
+    right: auto;
+    bottom: auto;
+    top: 97%;
+    left: 60%;
+    width: 205px;
+  }
+  .gold-tape--4 {
+    top: -2%;
+    left: 60%;
+    width: 210px;
+  }
   .testimonial__inner {
     gap: 54px;
   }
@@ -739,6 +787,10 @@ img {
   .work__inner {
     padding: 91px 22px 85px;
   }
+  .work__arrow {
+    margin-top: 20px;
+    transform: translateX(-34px);
+  }
   .project-grid {
     display: block;
     margin-top: 48px;
@@ -764,19 +816,26 @@ img {
     aspect-ratio: 1.05 / 1;
   }
   .gold-tape--1 {
-    left: -48px;
-    top: -45px;
-    width: 130px;
+    left: -27px;
+    top: -30px;
+    width: 142px;
   }
-  .gold-tape--2,
-  .gold-tape--4 {
-    top: -48px;
-    width: 135px;
+  .gold-tape--2 {
+    left: 47%;
+    top: -38px;
+    width: 188px;
   }
   .gold-tape--3 {
-    right: -44px;
-    bottom: -50px;
-    width: 135px;
+    right: auto;
+    bottom: auto;
+    top: 97%;
+    left: 60%;
+    width: 182px;
+  }
+  .gold-tape--4 {
+    top: -2%;
+    left: 60%;
+    width: 188px;
   }
   .view-all {
     margin-top: 38px;

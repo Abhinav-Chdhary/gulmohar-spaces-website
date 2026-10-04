@@ -68,19 +68,19 @@ export default function Home() {
                   />
                   <img
                     className={`gold-tape gold-tape--${project.id}`}
-                    src={project.id === 1 ? "/decorations/tape-vertical.svg" : "/decorations/tape-horizontal.svg"}
+                    src={project.id === 2 ? "/decorations/tape-horizontal.svg" : "/decorations/tape-vertical.svg"}
                     alt=""
                     aria-hidden="true"
                   />
                 </div>
-                <p className="project-card__name">PROJECT NAMW</p>
+                <p className="project-card__name">PROJECT NAME</p>
                 <p className="project-card__location">BANGALORE</p>
               </article>
             ))}
           </div>
 
           <a className="view-all" href="mailto:hello@gulmoharspaces.com">
-            VIEW ALL
+            <span>VIEW ALL</span>
             <img src="/decorations/right-arrow.svg" alt="" aria-hidden="true" />
           </a>
         </div>
